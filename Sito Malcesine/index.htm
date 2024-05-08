@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Malcesine</title>
+	<link rel="icon" type="image/x-icon" href="./img/lago2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		@font-face {
+			font-family: SUPERMEGAFONT;
+			src: url(./font/PublicSans-VariableFont_wght.ttf);
+		}
+		
+		* {
+			font-family: SUPERMEGAFONT, sans-serif;
+		}
+		
+		body {
+			width: 80%;
+			margin: auto;
+			background: linear-gradient(#ebfeff, #99cff0);
+		}
+		
+		nav {
+			background: linear-gradient(#e1fbfc, #eafdfe);
+		}
+		
+		nav > div > a {
+			/* color: #2d7ba6; */
+			color: #205372;
+		}
+		
+		.align-self-center {
+			text-align: center;
+			color: #205372;
+			text-shadow: 0.35vh 0.35vh 0.3vh #6bb1db;
+			padding: 2vh;
+			background: linear-gradient(#99cff0, #ebfeff);
+		}
+		
+		div>a {
+			padding: 2px;
+		}
+		
+		/* per essere responsive */
+		
+		.a{
+			font-size: 2.15vw;
+		}
+		
+		.b{
+			font-size: 1.15vw;
+		}
+		
+		.c{
+			height:90vh;
+			margin: 5vh 0px 0px 0px;
+		}
+		
+		@media screen and (max-width: 900px) {
+			div.px-4{
+				min-width: 100%;
+			}
+			
+			.a {
+				font-size: 2.75vh;
+			}
+			
+			.b {
+				font-size: 1.75vh;
+			}
+			
+			.c{
+				height:40vh;
+				margin: 10vh 0px 0px 0px;
+			}
+		}
+	</style>
+  </head>
+  <body>
+	<img class="d-block mx-auto img-thumbnail c" src="1.jpg" style="width:100%; z-index: -1">
+		<h1 class="text-center fw-bold" style="position: absolute; left: 19%; top:20%; z-index: 2; color:white; font-size: 5vw; text-shadow: 0.35vh 0.35vh 0.5vh black; color: #ebfeff;">Malcesine</h1>
+	</img>
+
+	<div class="d-flex mx-auto mt-4 mb-4" style="height: 70vh">
+		<div class="w-50 h-100">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44537.18545767446!2d10.764992854763625!3d45.7596838287537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47821ea79de2bab5%3A0x53a80494bab528d1!2s37018%20Malcesine%20VR!5e0!3m2!1sit!2sit!4v1706787072850!5m2!1sit!2sit"
+			width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div class="w-50 h-100 px-4 d-flex flex-wrap justify-content-center">
+			<div class="align-self-center a">	
+				Situata alle sponde del Garda, Malcesine (la punta di diamante del Garda) è la perfetta meta per la tua prossima vacanza, a soli 60 chilometri da Verona.
+			</div>
+			<div class="align-self-center b" style="text-align: center;">
+				Cel: +39 123 456 7890<br>
+				Fax: +39 123 456 7890<br>
+				Email: malcesine@turismo.com
+			</div>
+		</div>
+	</div>
+	
+	<nav class="navbar fixed-top bg-body-tertiary d-flex justify-content-around mx-auto" style="width:80%;">
+		<div><a href="index.htm">Home</a></div>
+		<div><a href="descrizione.htm">Descrizione</a></div>
+		<div><a href="galleria.htm">Galleria</a></div>
+		<div><a href="prenotazione.htm">Prenotazione</a></div>
+		<div><a href="hotel.htm">Hotel</a></div>
+	</nav>
+	
+	<!--footer class="navbar sticky-bottom d-flex justify-content-around mx-auto" style="width:100%; background-color:99cff0;">
+		
+	</footer-->
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

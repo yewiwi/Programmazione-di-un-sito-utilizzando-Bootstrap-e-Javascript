@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Malcesine</title>
+	<link rel="icon" type="image/x-icon" href="./img/lago2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		@font-face {
+			font-family: SUPERMEGAFONT;
+			src: url(./font/PublicSans-VariableFont_wght.ttf);
+		}
+		
+		* {
+			font-family: SUPERMEGAFONT, sans-serif;
+		}
+		
+		body {
+			width: 90%;
+			height: 100vh;
+			background: linear-gradient(#ebfeff, #99cff0);
+		}
+		
+		nav {
+			background: linear-gradient(#e1fbfc, #eafdfe);
+		}
+		
+		nav > div > a {
+			color: #205372;
+		}
+		
+		div>a {
+			padding: 2px;
+		}
+		
+		.container {
+			height: 80vh;
+		}
+		
+		.a {
+			width: 100%;
+			height: 15%;
+		}
+		
+		.b {
+			width: 100%;
+			height: 85%;
+			overflow-y: scroll;
+			display: flex;
+			gap: 10px;
+			flex-direction: column;
+		}
+		
+		.btn {
+			padding: 15px;
+		}
+		
+		.card {
+			background-color: #6ecfff;
+		}
+		
+		.card-img-top {
+			width: 50%;
+			height: 75%;
+		}
+		
+		.card-body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	</style>
+  </head>
+  <body class="mx-auto d-flex align-items-center justify-content-center">
+	
+	<div class="container d-flex align-items-center justify-content-center flex-column">
+		<div class="a d-flex align-items-center justify-content-around">
+			<button id="tutto" class="btn" style="background-color: #c4ecff;">Tutto</button>
+			<button id="hotel" class="btn" style="background-color: #6ecfff;">Alberghi</button>
+			<button id="bb" class="btn" style="background-color: #6ecfff;">Bed &amp; Breakfast</button>
+			<button id="cv" class="btn" style="background-color: #6ecfff;">Case-vacanza</button>
+		</div>
+		<div class="b">
+			<div class="card hotel"><div class="card-body">
+				<img src="./img/hotel/1.jpg" class="card-img-top mb-2" alt="...">
+				<h5 class="card-title">Albergo "Belvedere"</h5>
+				<h6 class="card-subtitle mb-2 text-body-secondary">120€/notte</h6>
+				<p class="card-text">L'Albergo "Belvedere" a Malcesine è un affascinante hotel sulle sponde del Lago di Garda, offrendo camere confortevoli, cucina regionale deliziosa, e una piscina all'aperto con vista panoramica. Ideale per un soggiorno rilassante e per esplorare le bellezze naturali circostanti.</p>
+			</div></div>
+			<div class="card cv"><div class="card-body">
+				<img src="./img/hotel/2.jpg" class="card-img-top mb-2" alt="...">
+				<h5 class="card-title">Super Casa Vacanza "Sponda"</h5>
+				<h6 class="card-subtitle mb-2 text-body-secondary">200€/notte</h6>
+				<p class="card-text">La Casa Vacanza "Sponda" è un'accogliente struttura situata sulle rive del Lago di Garda, offrendo un rifugio tranquillo e confortevole per una vacanza memorabile. Le sue camere ben arredate assicurano comfort e relax, mentre la vicinanza al lago permette agli ospiti di godere di viste mozzafiato e di svolgere attività acquatiche. Con la sua posizione privilegiata e l'atmosfera accogliente, la Casa Vacanza "Sponda" è la scelta ideale per una pausa rigenerante sul Lago di Garda.</p>
+			</div></div>
+			<div class="card bb"><div class="card-body">
+				<img src="./img/hotel/3.jpg" class="card-img-top mb-2" alt="...">
+				<h5 class="card-title">B&amp;B in Centro Malcesine</h5>
+				<h6 class="card-subtitle mb-2 text-body-secondary">100€/notte</h6>
+				<p class="card-text">Il nostro Bed and Breakfast nel centro di Malcesine è un'affascinante struttura situata nel cuore del paese, offrendo agli ospiti un soggiorno accogliente e autentico. Le nostre camere sono arredate con gusto e offrono comfort moderni, mentre la posizione centrale consente di esplorare facilmente le attrazioni locali, i ristoranti e i negozi. Con una calorosa ospitalità e una posizione comoda, il nostro Bed and Breakfast è la scelta perfetta per vivere appieno l'atmosfera unica di Malcesine.</p>
+			</div></div>
+			<div class="card cv"><div class="card-body">
+				<img src="./img/hotel/4.jpg" class="card-img-top mb-2" alt="...">
+				<h5 class="card-title">Casa Vacanza "Lucia"</h5>
+				<h6 class="card-subtitle mb-2 text-body-secondary">100€/notte</h6>
+				<p class="card-text">La Casa Vacanza "Lucia" è un'accogliente struttura situata in una posizione tranquilla a Malcesine, offrendo agli ospiti un rifugio confortevole e rilassante. Le sue camere sono arredate con gusto e dotate di comfort moderni, garantendo un soggiorno piacevole. Con la sua atmosfera accogliente e la vicinanza alle attrazioni locali, la Casa Vacanza "Lucia" è la scelta ideale per chi cerca una pausa rigenerante sulle rive del Lago di Garda.</p>
+			</div></div>
+			<div class="card bb"><div class="card-body">
+				<img src="./img/hotel/5.jpg" class="card-img-top mb-2" alt="...">
+				<h5 class="card-title">B&amp;B "Riccardo"</h5>
+				<h6 class="card-subtitle mb-2 text-body-secondary">80€/notte</h6>
+				<p class="card-text">Il Bed and Breakfast "Riccardo" è una graziosa struttura situata nel cuore di Malcesine, offrendo ai suoi ospiti un soggiorno accogliente e autentico. Le camere sono arredate con gusto e offrono comfort moderni, mentre la posizione centrale consente di esplorare comodamente le attrazioni locali, i ristoranti e i negozi. Con una calorosa ospitalità e una posizione conveniente, il Bed and Breakfast "Riccardo" è la scelta perfetta per vivere appieno l'esperienza di Malcesine.</p>
+			</div></div>
+			<div class="card hotel"><div class="card-body">
+				<img src="./img/hotel/6.jpg" class="card-img-top mb-2" alt="...">
+				<h5 class="card-title">Albergo "Malcesine 5 stelle"</h5>
+				<h6 class="card-subtitle mb-2 text-body-secondary">250€/notte</h6>
+				<p class="card-text">L'Albergo "Malcesine 5 stelle" offre un'esperienza di lusso senza pari sulle sponde del Lago di Garda, con camere lussuose, servizi di classe mondiale e una vista mozzafiato. Un'oasi di eleganza e comfort per un soggiorno indimenticabile a Malcesine.</p>
+			</div></div>
+		</div>
+	</div>
+	
+	<nav class="navbar fixed-top bg-body-tertiary d-flex justify-content-around mx-auto" style="width:80%">
+		<div><a href="index.htm">Home</a></div>
+		<div><a href="descrizione.htm">Descrizione</a></div>
+		<div><a href="galleria.htm">Galleria</a></div>
+		<div><a href="prenotazione.htm">Prenotazione</a></div>
+		<div><a href="hotel.htm">Hotel</a></div>
+	</nav>
+	
+	<script>
+		const btnTutto = document.getElementById("tutto");
+		const btnHotel = document.getElementById("hotel");
+		const btnBB = document.getElementById("bb");
+		const btnCV = document.getElementById("cv");
+		
+		const hotel = document.getElementsByClassName("hotel");
+		const bb = document.getElementsByClassName("bb");
+		const cv = document.getElementsByClassName("cv");
+		
+		btnTutto.addEventListener("click", function(){
+			for (let i = 0; i < hotel.length; i++)
+			{
+				hotel[i].style.display = "block";  
+			}
+			for (let i = 0; i < bb.length; i++)
+			{
+				bb[i].style.display = "block";  
+			}
+			for (let i = 0; i < cv.length; i++)
+			{
+				cv[i].style.display = "block";
+			}
+		});
+		btnHotel.addEventListener("click", function(){
+			for (let i = 0; i < hotel.length; i++)
+			{
+				hotel[i].style.display = "block";  
+			}
+			for (let i = 0; i < bb.length; i++)
+			{
+				bb[i].style.display = "none";  
+			}
+			for (let i = 0; i < cv.length; i++)
+			{
+				cv[i].style.display = "none";  
+			}
+		});
+		btnBB.addEventListener("click", function(){
+			for (let i = 0; i < hotel.length; i++)
+			{
+				hotel[i].style.display = "none";  
+			}
+			for (let i = 0; i < bb.length; i++)
+			{
+				bb[i].style.display = "block";  
+			}
+			for (let i = 0; i < cv.length; i++)
+			{
+				cv[i].style.display = "none";  
+			}
+		});
+		btnCV.addEventListener("click", function(){
+			for (let i = 0; i < hotel.length; i++)
+			{
+				hotel[i].style.display = "none";  
+			}
+			for (let i = 0; i < bb.length; i++)
+			{
+				bb[i].style.display = "none";  
+			}
+			for (let i = 0; i < cv.length; i++)
+			{
+				cv[i].style.display = "block";  
+			}
+		});
+	</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
